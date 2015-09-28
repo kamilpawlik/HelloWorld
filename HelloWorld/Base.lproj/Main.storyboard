@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Witaj świecie!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOm-Pg-oOu">
+                                <rect key="frame" x="248" y="289" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAN-cb-rSy">
+                                <rect key="frame" x="257" y="496" width="86" height="30"/>
+                                <state key="normal" title="Wciśnij mnie"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSy-7J-REK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eAN-cb-rSy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9U2-zB-ygJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eAN-cb-rSy" secondAttribute="bottom" constant="74" id="Pho-di-3CX"/>
+                            <constraint firstItem="aOm-Pg-oOu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UeR-j5-snS"/>
+                            <constraint firstItem="aOm-Pg-oOu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yey-J5-rT9"/>
+                            <constraint firstItem="eAN-cb-rSy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ff0-Bf-JRh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eAN-cb-rSy" secondAttribute="bottom" constant="74" id="sHj-mW-rrI"/>
+                            <constraint firstItem="aOm-Pg-oOu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uuw-by-8Ix"/>
+                            <constraint firstItem="aOm-Pg-oOu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z5L-vx-eeB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UeR-j5-snS"/>
+                                <exclude reference="Yey-J5-rT9"/>
+                                <exclude reference="9U2-zB-ygJ"/>
+                                <exclude reference="sHj-mW-rrI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="aOm-Pg-oOu" id="T26-FM-Idw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
